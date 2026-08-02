@@ -17,6 +17,10 @@ FROM apache/spark:3.5.1 AS spark_dist
 
 FROM apache/airflow:2.11.0-python3.11
 
+# Vincula a imagem publicada no GHCR a este repositorio. Sem esse label o package
+# aparece "solto" na conta, sem link para o codigo-fonte que o gerou.
+LABEL org.opencontainers.image.source="https://github.com/RafaelMaciel2005/Data_Warehouse_Automation"
+
 USER root
 
 # 1. Instalação do Java 17 e utilitários (wget saiu: nao baixamos mais tarball).
