@@ -19,6 +19,10 @@ FROM apache/spark:3.5.1 AS spark_dist
 # 2. Runtime: Python 3.11 sobre Debian bookworm (mesmo minor de Python do driver)
 FROM python:3.11-slim-bookworm
 
+# Vincula a imagem publicada no GHCR a este repositorio. Sem esse label o package
+# aparece "solto" na conta, sem link para o codigo-fonte que o gerou.
+LABEL org.opencontainers.image.source="https://github.com/RafaelMaciel2005/Data_Warehouse_Automation"
+
 # Versoes dos JARs do S3A — devem casar com o Hadoop embutido no Spark (3.3.4)
 ARG HADOOP_AWS_VERSION=3.3.4
 ARG AWS_SDK_VERSION=1.12.262

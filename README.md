@@ -11,7 +11,7 @@ O objetivo do projeto é praticar e demonstrar, com uma stack próxima da usada 
 ![Dremio](https://img.shields.io/badge/Dremio-26.0-1F1348?logo=dremio&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
-[![CI](https://github.com/RafaelMaciel2005/Engenharia-de-Dados/actions/workflows/ci.yml/badge.svg)](https://github.com/RafaelMaciel2005/Engenharia-de-Dados/actions/workflows/ci.yml)
+[![CI](https://github.com/RafaelMaciel2005/Data_Warehouse_Automation/actions/workflows/ci.yml/badge.svg)](https://github.com/RafaelMaciel2005/Data_Warehouse_Automation/actions/workflows/ci.yml)
 
 > ⚠️ **Projeto em desenvolvimento ativo.** Este é um projeto de portfólio e a seção [Status &amp; Roadmap](#status--roadmap) documenta com transparência o que já está funcionando e o que ainda está em construção.
 
@@ -156,8 +156,8 @@ Os dados brutos **não são versionados neste repositório** (ver `.gitignore`);
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/RafaelMaciel2005/Engenharia-de-Dados.git
-cd Engenharia-de-Dados
+git clone https://github.com/RafaelMaciel2005/Data_Warehouse_Automation.git
+cd Data_Warehouse_Automation
 
 # 2. Configure as variáveis de ambiente
 cp infrastructure/docker/.env.example infrastructure/docker/.env
